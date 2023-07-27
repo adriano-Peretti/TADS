@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-03</title>
+</head>
+<body>
+    <p class="paragrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium impedit animi alias nobis ducimus minima reiciendis similique quisquam obcaecati dicta, eligendi consequatur optio exercitationem illum tempora! Quisquam incidunt aliquid non.
+    </p>
+
+    <button onclick="aumentaTexto()">Aumentar o texto</button>
+
+    <script>
+        function aumentaTexto() {
+            txt = document.querySelector(".paragrafo");
+            style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+            currentSize = parseFloat(style);
+            txt.style.fontSize = 30 + 'px';
+        }
+    </script>
+</body>
+</html>

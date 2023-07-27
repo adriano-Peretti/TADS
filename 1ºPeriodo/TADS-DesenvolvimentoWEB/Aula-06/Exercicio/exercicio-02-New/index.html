@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-II</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header></header>
+        <form class="form-container">
+            <label for="name">Nome</label>
+            <input type="name" name="name" placeholder="Nome" required minlength="3"/>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="user@exemple.org" required  />
+
+            <label for="password">Password</label>
+            <input type="password"  name="password" placeholder="6 caracteres" required minlength="6" maxlength="10" />
+            
+            <label for="conhecimentos">Possui conhecimento?</label>
+            <div class="conhecimentos">
+                <label>
+                    <input type="checkbox" name="conhecimentos" value="1">
+                    JavaScript
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="conhecimentos" value="2">
+                    HTML
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="conhecimentos" value="3">
+                    CSS
+                </label>
+            </div>
+            
+            <label for="curso-selection">Curso</label>
+            <select name="curso-selection">
+                <option value="">--Selecione--</option>
+                <option value="ads">Análise e Desenvolvimento</option>
+                <option value="fisica">Física</option>
+                <option value="matematica">Matemática</option>                
+            </select>
+            
+            <label for="turno">Turno</label>
+            <div class="turno">
+                <input type="radio" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+                <input type="radio" name="turno" value="noite">
+                <label for="noite">Noite</label>
+            </div>
+
+            <label for="motivo-matricula"> Motivo matrícula</label>
+            <textarea cols="40" rows="5" name="motivo-matricula"></textarea>
+        
+            <input type="submit" value="enviar">
+        </form>    
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 10px;
+    border: 2px solid #ccc;
+}
+
+h1 {
+    display: flex;
+    background-color: #5EFB6E;
+    margin: 5px;
+    padding: 5px;
+    grid-column: 1/3;
+    align-items: center;
+    justify-content: center;
+}
+
+.casas-centro, .casas-vila {
+    gap: 10px;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 5px;
+    padding: 5px;
+    border: 2px solid #ccc;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.casas-vila {
+    margin-bottom: 5px;
+}

@@ -1,0 +1,60 @@
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #acf0ac;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;    
+    color: #000063;
+    font-weight: 700;
+}
+
+input[type="date"], select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+select {
+    height: 38px;
+}
+
+.situacao-escolaridade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="radio"] + label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;   
+    font-weight: 300;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

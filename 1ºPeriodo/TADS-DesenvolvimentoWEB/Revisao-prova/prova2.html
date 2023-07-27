@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova2</title>
+</head>
+<body>
+    <p>Este é o primeiro paragrafo</p>
+    <input type="text" class="nomeCor" oninput="changeColor()"/>
+
+    <script>
+        function changeColor() {
+        let cor = document.querySelector(".nomeCor").value;
+        let p = document.querySelector("p");
+        p.style.color = cor;
+    }
+    </script>
+</body>
+</html>

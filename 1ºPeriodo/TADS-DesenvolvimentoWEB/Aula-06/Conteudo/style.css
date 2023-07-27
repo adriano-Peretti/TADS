@@ -1,0 +1,16 @@
+h1 {
+    color: #500000;
+}
+form {
+    display: grid;
+    grid-template-columns:  min-content 200px;
+    gap: 10px;
+}
+label {
+    justify-content: right;
+}
+button {
+    grid-column: 2/3;
+    justify-self: right;
+    padding: 10px;
+}

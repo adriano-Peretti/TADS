@@ -1,0 +1,30 @@
+body {
+    width: 330px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+  }
+  
+  thead {
+    background-color: #6e6e6e;
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: start;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
+  
+  th {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  td img {
+    width: 100px;
+    object-fit: contain;
+  }

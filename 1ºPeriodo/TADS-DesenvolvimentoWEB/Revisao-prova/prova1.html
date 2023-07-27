@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prova1-web</title>
+</head>
+<body>
+    <h1>Seja bem vindo: </h1>
+    <label>Digite seu nome</label>
+    <!-- <input type="text" id="nome" oninput="changeContent()"/> -->
+    <input type="text" id="nome"/> 
+    <button type="button" id="button" onclick="changeContent()">Apply</button>
+
+    <script>
+        function changeContent(){
+            // como ler o valor digitado da input
+            let input = document.querySelector("#nome").value;
+            // name = input.value;
+            // apresentar a mensagem - jeito facil
+            //alert("Seja bem Vindo: " + input);
+
+            // mensagem no h1 - jeito certo
+            let h1 = document.querySelector("h1");
+            h1.innerText = 'Seja bem vindo: ' + input;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.tabela {
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    
+}
+
+.linha-titulo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.linha-dados {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.modelo {
+    border: 1px solid black;
+    background-color: #ccffff;
+    padding: 10px;
+}
+
+.consumo {
+    border: 1px solid black;
+    background-color: #98ff98;
+    padding: 10px;
+}
+
+.linha-titulo .modelo, 
+.linha-titulo .consumo {
+    background-color: #6e6e6e;
+}

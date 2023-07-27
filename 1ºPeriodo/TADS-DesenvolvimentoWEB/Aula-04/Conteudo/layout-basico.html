@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>layout-basico-1-coluna</title>
+        <style> 
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                /* a pagina ocupa no minimo toda a tela na vertidal */
+                min-height: 100vh;
+                /* definir que a body é um flexBox */
+                display: flex;
+                /* define que os elementos(filhos da body) aparecem em coluna */
+                flex-direction: column;
+            }
+            .container {
+                padding: 10px;
+                /* regra: expande a container para ocupar o espaço vazio */
+                flex: 1 0 auto;
+            }
+            .topo {
+                border: 1px solid darkblue;
+                text-align: center;
+                background-color: #bebebe;
+                padding: 20px 20px 0px 20px;
+            }
+            .menu { 
+                display: flex;
+                flex: auto;
+                background-color: #ccc;
+                border-radius: 3px;
+                padding: 10px;
+                margin: 0px 20px 0px 20px;
+            }
+            .menu__conteudo{                
+            }
+            .menu__sair{
+                text-align: end;
+            }
+            .menu a{
+                text-decoration: none;
+                padding: 0px 10px;
+            }
+            .menu a:hover{
+                background-color: aqua;
+            }
+            .conteudo {
+                padding: 10px;
+                margin: 10px;
+            }
+            p {
+                margin: 40px 0px 0px 20px;
+            }
+            .rodape {
+                border: 1px solid darkgoldenrod;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="topo">
+                <h1>
+                    Desenvolvimento...
+                </h1>
+                <div class="menu">
+                    <div class="menu__conteudo">
+                        <a  href="#">Novidades</a>
+                        <a  href="#">Posts</a>
+                        <a  href="#">Login</a>
+                    </div> 
+                    <div class="menu__sair">
+                        <a  href="#">Sair</a>
+                    </div> 
+                </div>
+            </div>       
+            <div class="conteudo">
+                <h2>últimos posts</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quidem dicta at impedit excepturi modi, vitae neque illo error? Alias, modi perferendis! Placeat beatae assumenda veniam quia ut cum temporibus, laborum mollitia voluptatem illum obcaecati repellendus recusandae. A possimus libero sunt nisi deleniti, similique reprehenderit.
+                </p>
+
+            </div>
+        </div> <!-- Fechamento do container -->
+        <div class="rodape">
+            <p>
+                <a href="#">Desenvolvido por Adriano P. S. Santos</a>
+                <a href="#">Mapa do site</a>
+                <a href="#">Saiba mais</a>
+            </p>
+        </div>
+    </body>
+</html>

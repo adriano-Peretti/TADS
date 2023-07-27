@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula-3</title>
+
+    <style>
+        body {
+            padding: 20px;
+        }
+        button {
+            color: #ff0000;
+            padding: 20px;
+        }
+        p {
+            /* altura da linha */
+            line-height: 1.5em;
+            margin-bottom: 20px;
+        }
+        /*regra por ID - "super especifico" */
+        #frase {
+            color: #ff0000;
+            text-align: center;
+            font-style: italic;
+            font-size: 20px;
+        }
+        /*regra por clase*/
+        .texto {
+            text-align: justify;
+            color: green;
+        }
+        .sair{
+            background-color: blueviolet;
+            border: 1px dotted #ff0000;
+            border-radius: 5px;
+        }
+        .sair:hover{
+            background-color: darkmagenta;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        Seja bem vindo
+    </h1>
+    <p class="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aliquam aperiam deserunt illo quae quia eveniet tenetur quo, quisquam quasi eaque iure, impedit velit excepturi. 
+        Quod voluptatem reiciendis earum numquam eius qui? Consequuntur nisi consequatur rerum.
+    </p>
+    <p id="frase">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae tenetur qui quidem quisquam beatae incidunt.
+         Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet tempora odit inventore corrupti. 
+         Ducimus.</p>
+    <p class="texto">
+        Quibusdam reiciendis perspiciatis minus nisi? Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Nulla quo ipsam vel quia, sapiente ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere eveniet sint nam quo. 
+        Quis quae dolor impedit libero inventore nemo minus ab! Nihil, corporis!
+    </p>
+    <p>Autem quidem perferendis rerum eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aliquam consequuntur tempore ex id commodi odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Eum dicta rerum perspiciatis assumenda!</p>
+    <p>
+        Perspiciatis cum ullam similique laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Quisquam expedita rem reprehenderit suscipit repellat cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Tempora optio pariatur blanditiis totam iure qui.</p>
+    
+    <button onclick="alert('clicado')">
+        Clique aqui
+    </button>
+    <button class="sair" onclick="alert('logout')">
+        sair
+    </button>
+</body>
+</html>

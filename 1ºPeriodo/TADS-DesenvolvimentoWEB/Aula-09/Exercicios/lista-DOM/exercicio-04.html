@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-04</title>
+    <style>
+        section{
+            display: grid;
+            width: 400px;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <label for="conceito">Digite o conceito que deseja saber a nota</label>
+        <input type="text" id="conceito" autocomplete="off">
+
+        <button onclick="valorConceito()">Qual minha nota?</button>
+
+        <p>Nota</p>
+
+    </section>
+
+    <script>
+        function valorConceito(){
+            let conceito = document.querySelector("#conceito").value;
+            let nota;
+
+            switch (conceito.toUpperCase()) {
+                case 'A':
+                    nota = 10;
+                    break;
+                case 'B':
+                    nota = 8;
+                    break;   
+                case 'C':
+                    nota = 6;
+                    break;                    
+                case 'D':
+                    nota = 3;
+                    break;
+                default:
+                    break;
+            }
+
+            let p = document.querySelector("p");
+            p.innerHTML = nota;
+        }
+    </script>
+
+</body>
+</html>

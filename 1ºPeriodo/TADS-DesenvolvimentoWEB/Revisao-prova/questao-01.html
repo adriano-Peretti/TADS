@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao-01</title>
+</head>
+<body>
+    <p>
+        Questão 1: Alterar a cor dos parágrafos para vermelho quando usuário clica no botão Alterar
+    </p>
+    <p>
+        Segundo paragrafo
+    </p>
+    <pre>
+        Resumo da lógica JS para reseolver uma questão.
+        1) identificadno quem ou quais são os alvos (tags)
+        2) qual evento que dispara a ação
+        3) implementar a função do JS que realizará essa ação.
+    </pre>
+
+    <button onclick="alteraCor()">Alterar</button>
+
+    <script>
+        function alteraCor() {
+            // 1) obter uma referencia dos paragrafos
+                // a) alterar somente o primeiro:
+                let p = document.querySelector("p");
+
+                // b) alterar todos 
+                let ps = document.querySelectorAll("p");
+
+            // 2) alterar a cor dos paragrafos
+                // a)
+                p.style.color = "red";
+                // b) vetor
+                ps[0].style.color = 'red';
+                ps[1].style.color = 'blue';
+        }
+    </script>
+
+
+</body>
+</html>

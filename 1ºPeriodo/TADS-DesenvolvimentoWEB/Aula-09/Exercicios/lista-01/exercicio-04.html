@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-04</title>
+        <style>
+            form {
+                display: grid;
+                margin: 30px;
+                padding: 30px;
+                justify-content: center;
+                justify-items: center;
+                gap: 10px;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+        </style>
+</head>
+<body>
+    <form>
+        <label for="num_01">Digite primeiro número</label>
+        <input type="number" id="num_01" autocomplete="off">
+        <label for="num_02">Digite o segundo número</label>
+        <input type="number" id="num_02" autocomplete="off">
+        <label for="num_03">Digite o terceiro número</label>
+        <input type="number" id="num_03" autocomplete="off">
+
+        <button onclick="calculateMedia()">Calcular média</button>
+    </form>
+    <script>
+        function calculateMedia(){
+            let num_01 = parseFloat(document.getElementById("num_01").value);
+            let num_02 = parseFloat(document.getElementById("num_02").value);
+            let num_03 = parseFloat(document.getElementById("num_03").value);
+
+            let media = (num_01 + num_02 + num_03)/3;
+
+            document.write("A media desses número é: " + media);
+        }
+    </script>
+</body>
+</html>

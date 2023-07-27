@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-03</title>
+    <style>
+        form {
+            display: grid;
+            margin: 30px;
+            padding: 30px;
+            justify-content: center;
+            justify-items: center;
+            gap: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="cotacao">Digite quantos dolares deseja trocar: </label>
+        <input type="number" id="cotacao" autocomplete="off">
+
+        <button onclick="calculateCotacao()">Valor em Reais</button>
+    </form>
+    <script>
+        function calculateCotacao(){
+        let valor = parseFloat(document.getElementById("cotacao").value);
+
+        let valorReal = valor * 5.21;
+
+        document.write(valor + " dolares são " + valorReal + " Reais");
+        }   
+    </script>
+</body>
+</html>

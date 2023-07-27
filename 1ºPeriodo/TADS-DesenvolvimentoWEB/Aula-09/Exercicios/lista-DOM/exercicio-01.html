@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-01</title>
+    <style>
+        section {
+            display: grid;
+            gap: 10px;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            display: flex;
+            border: 1px solid black;
+            padding: 3px;
+            justify-content: center;        
+        }
+        
+        button {
+            padding: 5px; 
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <label for="dolar">Qual o valor do produto em dolar?</label>
+        <input type="number" id="dolar" autocomplete="off">
+        <label for="cotacao">Qual o valor da cotacao?</label>
+        <input type="number" id="cotacao" autocomplete="off">
+
+        <button onclick="calculateReal()">Calcular preço em Real</button>
+
+        <p>Valor em real</p>
+    </section>
+    <script>
+        function calculateReal(){
+            let dolar = parseFloat(document.querySelector("#dolar").value);
+            let cotacao = parseFloat(document.querySelector("#cotacao").value);
+
+            let real = dolar * cotacao;
+
+            let p = document.querySelector("p");
+
+            p.innerHTML = real.toFixed(2);
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário de Cadastro</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="form-container">
+		<form>
+            <label for="nome">Nome</label>
+			<div class="row">
+				<div class="col-2">
+					<input type="text" placeholder="Nome">
+				</div>
+				<div class="col-2">
+					<input type="text" placeholder="Sobrenome">
+				</div>
+			</div>
+            <label for="username">Escolher um nome de usuário</label>
+			<div class="row">
+				<div class="col-1">
+					<input type="text">
+				</div>
+            </div>
+            <label for="senha">Criar uma senha</label>
+			<div class="row">
+				<div class="col-1">
+					<input type="password">
+				</div>
+            </div>
+            <label for="confirma-senha">Confirme sua Senha</label>
+            <div class="row">
+				<div class="col-1">
+					<input type="password">
+				</div>
+            </div>
+            <label for="date-inputs">Data de Nascimento</label>
+			<div class="row">
+				<div class="col-1">
+					<div class="date-inputs">
+						<input type="number" placeholder="Dia">
+						<select>
+							<option value="">Mês</option>
+							<option value="1">Janeiro</option>
+							<option value="2">Fevereiro</option>
+							<option value="3">Março</option>
+							<option value="4">Abril</option>
+							<option value="5">Maio</option>
+							<option value="6">Junho</option>
+							<option value="7">Julho</option>
+							<option value="8">Agosto</option>
+							<option value="9">Setembro</option>
+							<option value="10">Outubro</option>
+							<option value="11">Novembro</option>
+							<option value="12">Dezembro</option>
+						</select>
+						<input type="number" placeholder="Ano">
+					</div>
+				</div>
+            </div>
+            <label for="sexo">Sexo</label>
+            <div class="row">
+				<div class="col-1">
+					<select>
+						<option value="">Sou do sexo...</option>
+						<option value="masc">Masculino</option>
+						<option value="fem">Feminino</option>
+						<option value="outro">Outro</option>
+					</select>
+				</div>
+            </div>
+            <label for="celular">Celular</label>
+            <div class="row">
+				<div class="col-1">
+					<input type="tel" placeholder="(XX)XXXXX-XXXX" >
+				</div>
+			</div>
+			<button type="submit">Cadastrar</button>
+		</form>
+	</div>
+</body>
+</html>

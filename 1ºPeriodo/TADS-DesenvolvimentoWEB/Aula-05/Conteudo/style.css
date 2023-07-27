@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    /* a pagina ocupa no minimo toda a tela na vertidal */
+    min-height: 100vh;
+    /* definir que a body é um flexBox */
+    display: flex;
+    /* define que os elementos(filhos da body) aparecem em coluna */
+    flex-direction: column;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 300;
+}
+.container {
+    /* regra: expande a container para ocupar o espaço vazio */
+    flex: 1 0 auto;
+}
+.topo {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    background-color: #bebebe;
+}
+.titulo{
+    padding: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.menu { 
+    display: flex;
+    background-color: #ccc;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    margin: 0px 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-weight: 400;
+}
+.menu a:hover {
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+}
+.menu .menu__sair{
+    margin-left: auto;
+    color: darkred;
+}
+.conteudo {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.conteudo p {
+    width: 350px;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.rodape {
+    padding: 10px;
+    background-color: rgb(170, 63, 63); 
+    text-align: center;
+}
+.rodape a {
+    color: #ccc;
+    text-decoration: none;
+}

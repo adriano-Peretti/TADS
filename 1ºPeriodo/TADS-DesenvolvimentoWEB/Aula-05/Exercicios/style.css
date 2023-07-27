@@ -1,0 +1,171 @@
+/* Estilos globais */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 40px;
+    line-height: 1.5;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.botao {
+    font-size: 20px;
+    flex: 1 0 120px;
+    max-width: 100%;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #B22222;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+  
+.botao:hover {
+    background-color: #9b1d1d;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}  
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #B22222;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+    color: #F5F5F5;
+}
+
+/* Estilos do mapa */
+iframe {
+    border: none;
+    width: 100%;
+    height: 400px;
+}
+
+/* Estilos das imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+              0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos das seções */
+section {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+/* Estilos da lista de razões */
+ol li {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #B22222;
+    color: #F5F5F5;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos do link para a página principal */
+.back {
+    display: block;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+.back:hover {
+    color: #F5F5F5;
+}
+
+/* Adicionar regras de estilo responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+    ol li {
+        font-size: 16px;
+    }
+    .botao {
+        flex-basis: 40%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+    ol li {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 14px;
+        padding: 5px;
+    }
+}

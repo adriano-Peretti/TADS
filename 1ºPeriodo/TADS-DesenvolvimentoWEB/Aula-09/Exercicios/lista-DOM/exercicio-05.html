@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-04</title>
+    <style>
+        section{
+            display: grid;
+            width: 400px;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <label for="conceito-01">Digite o primeiro conceito</label>
+        <input type="text" id="conceito-01" autocomplete="off">
+        <label for="conceito-02">Digite o segundo conceito</label>
+        <input type="text" id="conceito-02" autocomplete="off">
+        <label for="conceito-03">Digite o terceiro conceito</label>
+        <input type="text" id="conceito-03" autocomplete="off">
+        <label for="conceito-04">Digite o quarto conceito</label>
+        <input type="text" id="conceito-04" autocomplete="off">
+
+        <button onclick="calcularMedia()">Qual a media?</button>
+
+        <p>Média</p>
+
+    </section>
+
+    <script>
+        function calcularMedia(){
+
+            let conceito01 = document.querySelector("#conceito-01").value.toUpperCase();
+            let conceito02 = document.querySelector("#conceito-02").value.toUpperCase();
+            let conceito03 = document.querySelector("#conceito-03").value.toUpperCase();
+            let conceito04 = document.querySelector("#conceito-04").value.toUpperCase();
+
+            let valor1 = convertConceitoToValor(conceito01);
+            let valor2 = convertConceitoToValor(conceito02);
+            let valor3 = convertConceitoToValor(conceito03);
+            let valor4 = convertConceitoToValor(conceito04);
+
+            let media = (valor1 + valor2 + valor3 + valor4)/4;
+
+            let p = document.querySelector("p");
+            p.textContent = media.toFixed(2);
+        }
+
+        function convertConceitoToValor(conceito){
+            switch (conceito) {
+                case 'A':
+                    return 10;
+                case 'B':
+                    return 8; 
+                case 'C':
+                    return 6;                    
+                case 'D':
+                    return 3;
+                default:
+                    return 0;
+            }
+        }
+    </script>
+
+</body>
+</html>

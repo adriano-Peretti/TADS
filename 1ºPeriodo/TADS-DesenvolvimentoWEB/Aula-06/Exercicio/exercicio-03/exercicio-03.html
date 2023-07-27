@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-03</title>
+</head>
+<body>
+		<form class="form-container">
+			<h2>Cadastro Usuário</h2>
+            <label for="nome">Nome</label>
+			<div class="form-group">
+				<input type="text" name="nome" placeholder="Felix Moraes Silveis" required>
+			</div>
+            <label for="email">E-mail</label>
+			<div class="form-group">
+				<input type="email" name="email" placeholder="fms@test.org" required>
+			</div>
+            <label for="nascimento">Nascimento</label>
+			<div class="form-group">
+				<input type="date" name="nascimento" required>
+			</div>
+            <label for="pais">País</label>
+			<div class="form-group">
+				<select name="pais" required>
+					<option value="">Selecione</option>
+					<option value="brasil">Brasil</option>
+					<option value="eua">Estados Unidos</option>
+					<option value="franca">França</option>
+					<option value="japao">Japão</option>
+				</select>
+			</div>
+            <label for="idade">Idade</label>
+			<div class="form-group-line">
+				<input type="number" name="idade" required>
+				<label for="ddd">DDD</label>
+				<input type="number" name="ddd" placeholder="45" required>
+				<label for="telefone">Telefone</label>
+				<input type="tel" name="telefone" placeholder="99999-9999" required>
+			</div>
+			<button type="submit">
+				Adicionar
+            </button>
+		</form>
+</body>
+</html>

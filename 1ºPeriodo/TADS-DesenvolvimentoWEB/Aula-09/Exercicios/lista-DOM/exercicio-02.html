@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-02</title>
+    <style>
+        section {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        button {
+            padding: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <label for="URL">Digite o URL da Imagem:</label>
+        <input type="url" id="URL" autocomplete="off">
+
+        <button onclick="openImage()">Essa é a sua imagem</button>             
+
+        <img id="imagem" src="#">
+
+    </section>
+    <script>
+        function openImage(){
+            let url = document.querySelector("#URL").value;
+
+            let img = document.querySelector("#imagem");
+            
+            img.src = url;
+        }
+    </script>
+    
+</body>
+</html>
